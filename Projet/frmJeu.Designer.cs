@@ -44,7 +44,7 @@
             this.pct3 = new System.Windows.Forms.PictureBox();
             this.pct2 = new System.Windows.Forms.PictureBox();
             this.pct15 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblAsk = new System.Windows.Forms.Label();
             this.cmdOui = new System.Windows.Forms.Button();
             this.cmdNon = new System.Windows.Forms.Button();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
@@ -249,15 +249,15 @@
             this.pct15.Tag = "15";
             this.pct15.Click += new System.EventHandler(this.picture_CLick);
             // 
-            // label1
+            // lblAsk
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(105, 212);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 25);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Commencer ?";
+            this.lblAsk.AutoSize = true;
+            this.lblAsk.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAsk.Location = new System.Drawing.Point(105, 212);
+            this.lblAsk.Name = "lblAsk";
+            this.lblAsk.Size = new System.Drawing.Size(156, 25);
+            this.lblAsk.TabIndex = 15;
+            this.lblAsk.Text = "Commencer ?";
             // 
             // cmdOui
             // 
@@ -267,6 +267,7 @@
             this.cmdOui.TabIndex = 16;
             this.cmdOui.Text = "Oui";
             this.cmdOui.UseVisualStyleBackColor = true;
+            this.cmdOui.Click += new System.EventHandler(this.cmdOui_Click);
             // 
             // cmdNon
             // 
@@ -276,6 +277,7 @@
             this.cmdNon.TabIndex = 17;
             this.cmdNon.Text = "Non";
             this.cmdNon.UseVisualStyleBackColor = true;
+            this.cmdNon.Click += new System.EventHandler(this.cmdNon_Click);
             // 
             // pictureBox15
             // 
@@ -334,7 +336,7 @@
             this.Controls.Add(this.pictureBox15);
             this.Controls.Add(this.cmdNon);
             this.Controls.Add(this.cmdOui);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblAsk);
             this.Controls.Add(this.pct15);
             this.Controls.Add(this.pct2);
             this.Controls.Add(this.pct3);
@@ -391,7 +393,7 @@
         private System.Windows.Forms.PictureBox pct3;
         private System.Windows.Forms.PictureBox pct2;
         private System.Windows.Forms.PictureBox pct15;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblAsk;
         private System.Windows.Forms.Button cmdOui;
         private System.Windows.Forms.Button cmdNon;
         private System.Windows.Forms.PictureBox pictureBox15;

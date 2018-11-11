@@ -27,8 +27,8 @@ namespace Projet
 
         private void cmdNiv1_Click(object sender, EventArgs e)
         {
-            frmJeu fenetreListe = new frmJeu();
-            fenetreListe.ShowDialog();
+            frmJeu fenetreJeu = new frmJeu();
+            fenetreJeu.ShowDialog();
         }
 
         private void cmdPlay_Click(object sender, EventArgs e)
@@ -42,6 +42,12 @@ namespace Projet
         {
             frmPrincipe fenetreListe = new frmPrincipe();
             fenetreListe.ShowDialog();
+        }
+
+        private void cmdNiv2_Click(object sender, EventArgs e)
+        {
+            frmJeu2 fenetreJeu2 = new frmJeu2();
+            fenetreJeu2.ShowDialog();
         }
     }
 }

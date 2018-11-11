@@ -10,14 +10,13 @@ using System.Windows.Forms;
 
 namespace Projet
 {
-    public partial class frmJeu : Form
+    public partial class frmJeu2 : Form
     {
         int nbrCoups = 0;
-        Random rnd = new Random();
-        int nbrOrdi, nbAlea, nbrIm = 0;
+        int nbrOrdi, nbAlea, nbrAct = 15;
         Boolean jo_or;
 
-        public frmJeu()
+        public frmJeu2()
         {
             InitializeComponent();
         }
@@ -29,14 +28,13 @@ namespace Projet
             {
                 pct_clique.Visible = false;
                 nbrCoups = nbrCoups + 1;
-                nbrIm++;
+                nbrAct--;
                 lblMsg.Text = "";
                 lblMsg2.Text = "";
                 jo_or = true;
                 Fin_de_jeu();
                 if (nbrCoups >= 3)
                 {
-                    nbAlea = rnd.Next(1, 4);
                     if (nbrCoups == 0)
                     {
                         lblMsg.Text = "Vous n'avez pas joué votre tour !";
@@ -46,26 +44,54 @@ namespace Projet
                     {
                         lblMsg.Text = "";
                         lblMsg2.Text = "";
-                        Tour_Ordi(nbAlea);
-                        nbrIm = nbrIm + nbAlea;
+                        Nbr_Ordi();
                         jo_or = false;
                         Fin_de_jeu();
                     }
                 }
             }
-            
+
         }
 
+        private void Nbr_Ordi()
+        {
+            if (nbrAct - 1 == 13 | nbrAct - 2 == 13)
+            {
+                nbAlea = nbrAct - 13;
+                nbrAct = nbrAct - nbAlea;
+            }
+            else if (nbrAct == 13 | nbrAct == 9 | nbrAct == 5 | nbrAct == 1)
+            {
+                nbAlea = 1;
+                nbrAct = nbrAct - nbAlea;
+            }
+            else if (nbrAct - 1 == 9 | nbrAct - 2 == 9 | nbrAct - 3 == 9)
+            {
+                nbAlea = nbrAct - 9;
+                nbrAct = nbrAct - nbAlea;
+            }
+            else if (nbrAct - 1 == 5 | nbrAct - 2 == 5 | nbrAct - 3 == 5)
+            {
+                nbAlea = nbrAct - 5;
+                nbrAct = nbrAct - nbAlea;
+            }
+            else if (nbrAct - 1 == 1 | nbrAct - 2 == 1 | nbrAct - 3 == 1)
+            {
+                nbAlea = nbrAct - 1;
+                nbrAct = nbrAct - nbAlea;
+            }
+            Tour_Ordi(nbAlea);
+        }
 
-        private void pictureBox15_Click(object sender, EventArgs e)
+        private void pctExit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
         private void cmdFin_Click(object sender, EventArgs e)
         {
+
             
-            nbAlea = rnd.Next(1, 4);
             if (nbrCoups == 0)
             {
                 lblMsg.Text = "Vous n'avez pas joué votre tour !";
@@ -75,8 +101,7 @@ namespace Projet
             {
                 lblMsg.Text = "";
                 lblMsg2.Text = "";
-                Tour_Ordi(nbAlea);
-                nbrIm = nbrIm + nbAlea;
+                Nbr_Ordi();
                 jo_or = false;
                 Fin_de_jeu();
             }
@@ -94,14 +119,12 @@ namespace Projet
             cmdOui.Visible = false;
             cmdNon.Visible = false;
             lblAsk.Visible = false;
-            nbAlea = rnd.Next(1, 4);
-            Tour_Ordi(nbAlea);
-            nbrIm = nbrIm + nbAlea;
+            Nbr_Ordi();
         }
 
         private void Fin_de_jeu()
         {
-            if (nbrIm >= 15)
+            if (nbrAct <= 0)
             {
                 if (jo_or == true)
                 {
@@ -117,7 +140,7 @@ namespace Projet
 
         private void Tour_Ordi(int a)
         {
-            nbrOrdi = 0;            
+            nbrOrdi = 0;
             if (nbrOrdi < a)
             {
                 if (pct1.Visible == true)
@@ -240,7 +263,5 @@ namespace Projet
             }
             nbrCoups = 0;
         }
-
-        
     }
 }

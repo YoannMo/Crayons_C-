@@ -94,6 +94,7 @@
             this.cmdNiv2.TabIndex = 5;
             this.cmdNiv2.Text = "Difficile";
             this.cmdNiv2.UseVisualStyleBackColor = true;
+            this.cmdNiv2.Click += new System.EventHandler(this.cmdNiv2_Click);
             // 
             // frmAccueil
             // 
