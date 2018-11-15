@@ -330,6 +330,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1050, 728);
+            this.ControlBox = false;
             this.Controls.Add(this.lblMsg2);
             this.Controls.Add(this.lblMsg);
             this.Controls.Add(this.cmdFin);
@@ -353,6 +354,7 @@
             this.Controls.Add(this.pct13);
             this.Controls.Add(this.pct5);
             this.Name = "frmJeu2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmJeu2";
             ((System.ComponentModel.ISupportInitialize)(this.pctExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pct15)).EndInit();

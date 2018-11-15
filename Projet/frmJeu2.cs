@@ -23,30 +23,33 @@ namespace Projet
 
         private void picture_CLick(object sender, EventArgs e)
         {
-            PictureBox pct_clique = sender as PictureBox;
-            if (pct_clique != null)
+            if (cmdOui.Visible == false)
             {
-                pct_clique.Visible = false;
-                nbrCoups = nbrCoups + 1;
-                nbrAct--;
-                lblMsg.Text = "";
-                lblMsg2.Text = "";
-                jo_or = true;
-                Fin_de_jeu();
-                if (nbrCoups >= 3)
+                PictureBox pct_clique = sender as PictureBox;
+                if (pct_clique != null)
                 {
-                    if (nbrCoups == 0)
+                    pct_clique.Visible = false;
+                    nbrCoups = nbrCoups + 1;
+                    nbrAct--;
+                    lblMsg.Text = "";
+                    lblMsg2.Text = "";
+                    jo_or = true;
+                    Fin_de_jeu();
+                    if (nbrCoups >= 3)
                     {
-                        lblMsg.Text = "Vous n'avez pas joué votre tour !";
-                        lblMsg2.Text = "Veuillez enlever au moins un stylo !";
-                    }
-                    else
-                    {
-                        lblMsg.Text = "";
-                        lblMsg2.Text = "";
-                        Nbr_Ordi();
-                        jo_or = false;
-                        Fin_de_jeu();
+                        if (nbrCoups == 0)
+                        {
+                            lblMsg.Text = "Vous n'avez pas joué votre tour !";
+                            lblMsg2.Text = "Veuillez enlever au moins un stylo !";
+                        }
+                        else
+                        {
+                            lblMsg.Text = "";
+                            lblMsg2.Text = "";
+                            Nbr_Ordi();
+                            jo_or = false;
+                            Fin_de_jeu();
+                        }
                     }
                 }
             }

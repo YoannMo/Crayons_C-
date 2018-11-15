@@ -22,66 +22,6 @@ namespace Projet
             InitializeComponent();
         }
 
-        private void picture_CLick(object sender, EventArgs e)
-        {
-            PictureBox pct_clique = sender as PictureBox;
-            if (pct_clique != null)
-            {
-                pct_clique.Visible = false;
-                nbrCoups = nbrCoups + 1;
-                nbrIm++;
-                lblMsg.Text = "";
-                lblMsg2.Text = "";
-                jo_or = true;
-                Fin_de_jeu();
-                if (nbrCoups >= 3)
-                {
-                    nbAlea = rnd.Next(1, 4);
-                    if (nbrCoups == 0)
-                    {
-                        lblMsg.Text = "Vous n'avez pas joué votre tour !";
-                        lblMsg2.Text = "Veuillez enlever au moins un stylo !";
-                    }
-                    else
-                    {
-                        lblMsg.Text = "";
-                        lblMsg2.Text = "";
-                        Tour_Ordi(nbAlea);
-                        nbrIm = nbrIm + nbAlea;
-                        jo_or = false;
-                        Fin_de_jeu();
-                    }
-                }
-            }
-            
-        }
-
-
-        private void pictureBox15_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void cmdFin_Click(object sender, EventArgs e)
-        {
-            
-            nbAlea = rnd.Next(1, 4);
-            if (nbrCoups == 0)
-            {
-                lblMsg.Text = "Vous n'avez pas joué votre tour !";
-                lblMsg2.Text = "Veuillez enlever au moins un stylo !";
-            }
-            else
-            {
-                lblMsg.Text = "";
-                lblMsg2.Text = "";
-                Tour_Ordi(nbAlea);
-                nbrIm = nbrIm + nbAlea;
-                jo_or = false;
-                Fin_de_jeu();
-            }
-        }
-
         private void cmdOui_Click(object sender, EventArgs e)
         {
             cmdOui.Visible = false;
@@ -99,21 +39,50 @@ namespace Projet
             nbrIm = nbrIm + nbAlea;
         }
 
-        private void Fin_de_jeu()
+        private void picture_CLick(object sender, EventArgs e)
         {
-            if (nbrIm >= 15)
+            if (cmdOui.Visible == false)
             {
-                if (jo_or == true)
+                PictureBox pct_clique = sender as PictureBox;
+                if (pct_clique != null)
                 {
-                    lblMsg.Text = "Vous avez perdu...";
+                    pct_clique.Visible = false;
+                    nbrCoups = nbrCoups + 1;
+                    nbrIm++;
+                    jo_or = true;
+                    Fin_de_jeu();
+                    if (nbrCoups >= 3)
+                    {
+                        nbAlea = rnd.Next(1, 4);
+                        lblMsg.Text = "";
+                        lblMsg2.Text = "";
+                        Tour_Ordi(nbAlea);
+                        nbrIm = nbrIm + nbAlea;
+                        jo_or = false;
+                        Fin_de_jeu();
+                    }
                 }
-                else
-                {
-                    lblMsg.Text = "Vous avez gagné !";
-                }
-                cmdFin.Visible = false;
             }
         }
+        private void cmdFin_Click(object sender, EventArgs e)
+        {
+
+            if (nbrCoups == 0)
+            {
+                lblMsg.Text = "Vous n'avez pas joué votre tour !";
+                lblMsg2.Text = "Veuillez enlever au moins un stylo !";
+            }
+            else
+            {
+                nbAlea = rnd.Next(1, 4);
+                lblMsg.Text = "";
+                lblMsg2.Text = "";
+                Tour_Ordi(nbAlea);
+                nbrIm = nbrIm + nbAlea;
+                jo_or = false;
+                Fin_de_jeu();
+            }
+        }        
 
         private void Tour_Ordi(int a)
         {
@@ -241,6 +210,25 @@ namespace Projet
             nbrCoups = 0;
         }
 
-        
+        private void Fin_de_jeu()
+        {
+            if (nbrIm >= 15)
+            {
+                if (jo_or == true)
+                {
+                    lblMsg.Text = "Vous avez perdu...";
+                }
+                else
+                {
+                    lblMsg.Text = "Vous avez gagné !";
+                }
+                cmdFin.Visible = false;
+            }
+        }
+
+        private void pictureBox15_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
