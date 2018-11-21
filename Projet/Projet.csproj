@@ -64,6 +64,12 @@
     <Compile Include="frmJeu2.Designer.cs">
       <DependentUpon>frmJeu2.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLvl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLvl.Designer.cs">
+      <DependentUpon>frmLvl.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPrincipe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmJeu2.resx">
       <DependentUpon>frmJeu2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLvl.resx">
+      <DependentUpon>frmLvl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipe.resx">
       <DependentUpon>frmPrincipe.cs</DependentUpon>

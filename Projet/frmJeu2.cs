@@ -125,6 +125,11 @@ namespace Projet
             Nbr_Ordi();
         }
 
+        private void lblAsk_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void Fin_de_jeu()
         {
             if (nbrAct <= 0)

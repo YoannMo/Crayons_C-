@@ -17,7 +17,8 @@ namespace Projet
             InitializeComponent();
             cmdNiv1.Visible = false;
             cmdNiv2.Visible = false;
-
+            this.Size = Screen.GetBounds(this).Size;
+            this.Location = Screen.GetBounds(this).Location;
         }
 
         private void cmdExit_Click(object sender, EventArgs e)

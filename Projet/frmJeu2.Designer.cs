@@ -144,6 +144,7 @@
             this.lblAsk.Size = new System.Drawing.Size(156, 25);
             this.lblAsk.TabIndex = 37;
             this.lblAsk.Text = "Commencer ?";
+            this.lblAsk.Click += new System.EventHandler(this.lblAsk_Click);
             // 
             // pct15
             // 
