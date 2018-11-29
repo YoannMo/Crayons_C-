@@ -78,7 +78,7 @@
             this.lblMsg2.AutoSize = true;
             this.lblMsg2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMsg2.ForeColor = System.Drawing.Color.Red;
-            this.lblMsg2.Location = new System.Drawing.Point(81, 482);
+            this.lblMsg2.Location = new System.Drawing.Point(81, 489);
             this.lblMsg2.Name = "lblMsg2";
             this.lblMsg2.Size = new System.Drawing.Size(0, 18);
             this.lblMsg2.TabIndex = 43;
@@ -90,7 +90,7 @@
             this.lblMsg.AutoSize = true;
             this.lblMsg.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMsg.ForeColor = System.Drawing.Color.Red;
-            this.lblMsg.Location = new System.Drawing.Point(70, 417);
+            this.lblMsg.Location = new System.Drawing.Point(70, 424);
             this.lblMsg.Name = "lblMsg";
             this.lblMsg.Size = new System.Drawing.Size(0, 18);
             this.lblMsg.TabIndex = 42;
@@ -100,7 +100,7 @@
             this.pctExit.BackColor = System.Drawing.Color.Transparent;
             this.pctExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pctExit.Image = ((System.Drawing.Image)(resources.GetObject("pctExit.Image")));
-            this.pctExit.Location = new System.Drawing.Point(889, 586);
+            this.pctExit.Location = new System.Drawing.Point(876, 557);
             this.pctExit.Name = "pctExit";
             this.pctExit.Size = new System.Drawing.Size(154, 130);
             this.pctExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -113,7 +113,7 @@
             this.lblAsk.AutoSize = true;
             this.lblAsk.BackColor = System.Drawing.Color.Transparent;
             this.lblAsk.Font = new System.Drawing.Font("Vivaldi", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAsk.Location = new System.Drawing.Point(65, 167);
+            this.lblAsk.Location = new System.Drawing.Point(52, 138);
             this.lblAsk.Name = "lblAsk";
             this.lblAsk.Size = new System.Drawing.Size(189, 44);
             this.lblAsk.TabIndex = 37;
@@ -124,7 +124,7 @@
             // 
             this.pct1.BackColor = System.Drawing.Color.Transparent;
             this.pct1.Image = ((System.Drawing.Image)(resources.GetObject("pct1.Image")));
-            this.pct1.Location = new System.Drawing.Point(538, 42);
+            this.pct1.Location = new System.Drawing.Point(525, 13);
             this.pct1.Name = "pct1";
             this.pct1.Size = new System.Drawing.Size(93, 119);
             this.pct1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -137,7 +137,7 @@
             // 
             this.pct2.BackColor = System.Drawing.Color.Transparent;
             this.pct2.Image = ((System.Drawing.Image)(resources.GetObject("pct2.Image")));
-            this.pct2.Location = new System.Drawing.Point(484, 167);
+            this.pct2.Location = new System.Drawing.Point(471, 138);
             this.pct2.Name = "pct2";
             this.pct2.Size = new System.Drawing.Size(93, 119);
             this.pct2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -150,7 +150,7 @@
             // 
             this.pct3.BackColor = System.Drawing.Color.Transparent;
             this.pct3.Image = ((System.Drawing.Image)(resources.GetObject("pct3.Image")));
-            this.pct3.Location = new System.Drawing.Point(583, 167);
+            this.pct3.Location = new System.Drawing.Point(570, 138);
             this.pct3.Name = "pct3";
             this.pct3.Size = new System.Drawing.Size(93, 119);
             this.pct3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -163,7 +163,7 @@
             // 
             this.pct4.BackColor = System.Drawing.Color.Transparent;
             this.pct4.Image = ((System.Drawing.Image)(resources.GetObject("pct4.Image")));
-            this.pct4.Location = new System.Drawing.Point(439, 292);
+            this.pct4.Location = new System.Drawing.Point(426, 263);
             this.pct4.Name = "pct4";
             this.pct4.Size = new System.Drawing.Size(93, 119);
             this.pct4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -176,7 +176,7 @@
             // 
             this.pct8.BackColor = System.Drawing.Color.Transparent;
             this.pct8.Image = ((System.Drawing.Image)(resources.GetObject("pct8.Image")));
-            this.pct8.Location = new System.Drawing.Point(484, 417);
+            this.pct8.Location = new System.Drawing.Point(471, 388);
             this.pct8.Name = "pct8";
             this.pct8.Size = new System.Drawing.Size(93, 119);
             this.pct8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -189,7 +189,7 @@
             // 
             this.pct9.BackColor = System.Drawing.Color.Transparent;
             this.pct9.Image = ((System.Drawing.Image)(resources.GetObject("pct9.Image")));
-            this.pct9.Location = new System.Drawing.Point(583, 417);
+            this.pct9.Location = new System.Drawing.Point(570, 388);
             this.pct9.Name = "pct9";
             this.pct9.Size = new System.Drawing.Size(93, 119);
             this.pct9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -202,7 +202,7 @@
             // 
             this.pct5.BackColor = System.Drawing.Color.Transparent;
             this.pct5.Image = ((System.Drawing.Image)(resources.GetObject("pct5.Image")));
-            this.pct5.Location = new System.Drawing.Point(538, 292);
+            this.pct5.Location = new System.Drawing.Point(525, 263);
             this.pct5.Name = "pct5";
             this.pct5.Size = new System.Drawing.Size(93, 119);
             this.pct5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -215,7 +215,7 @@
             // 
             this.pct6.BackColor = System.Drawing.Color.Transparent;
             this.pct6.Image = ((System.Drawing.Image)(resources.GetObject("pct6.Image")));
-            this.pct6.Location = new System.Drawing.Point(637, 292);
+            this.pct6.Location = new System.Drawing.Point(624, 263);
             this.pct6.Name = "pct6";
             this.pct6.Size = new System.Drawing.Size(93, 119);
             this.pct6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -228,7 +228,7 @@
             // 
             this.pct7.BackColor = System.Drawing.Color.Transparent;
             this.pct7.Image = ((System.Drawing.Image)(resources.GetObject("pct7.Image")));
-            this.pct7.Location = new System.Drawing.Point(385, 417);
+            this.pct7.Location = new System.Drawing.Point(372, 388);
             this.pct7.Name = "pct7";
             this.pct7.Size = new System.Drawing.Size(93, 119);
             this.pct7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -241,7 +241,7 @@
             // 
             this.pct10.BackColor = System.Drawing.Color.Transparent;
             this.pct10.Image = ((System.Drawing.Image)(resources.GetObject("pct10.Image")));
-            this.pct10.Location = new System.Drawing.Point(682, 417);
+            this.pct10.Location = new System.Drawing.Point(669, 388);
             this.pct10.Name = "pct10";
             this.pct10.Size = new System.Drawing.Size(93, 119);
             this.pct10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -254,7 +254,7 @@
             // 
             this.pct11.BackColor = System.Drawing.Color.Transparent;
             this.pct11.Image = ((System.Drawing.Image)(resources.GetObject("pct11.Image")));
-            this.pct11.Location = new System.Drawing.Point(340, 542);
+            this.pct11.Location = new System.Drawing.Point(327, 513);
             this.pct11.Name = "pct11";
             this.pct11.Size = new System.Drawing.Size(93, 119);
             this.pct11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -267,7 +267,7 @@
             // 
             this.pct12.BackColor = System.Drawing.Color.Transparent;
             this.pct12.Image = ((System.Drawing.Image)(resources.GetObject("pct12.Image")));
-            this.pct12.Location = new System.Drawing.Point(439, 542);
+            this.pct12.Location = new System.Drawing.Point(426, 513);
             this.pct12.Name = "pct12";
             this.pct12.Size = new System.Drawing.Size(93, 119);
             this.pct12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -280,7 +280,7 @@
             // 
             this.pct13.BackColor = System.Drawing.Color.Transparent;
             this.pct13.Image = ((System.Drawing.Image)(resources.GetObject("pct13.Image")));
-            this.pct13.Location = new System.Drawing.Point(538, 542);
+            this.pct13.Location = new System.Drawing.Point(525, 513);
             this.pct13.Name = "pct13";
             this.pct13.Size = new System.Drawing.Size(93, 119);
             this.pct13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -293,7 +293,7 @@
             // 
             this.pct14.BackColor = System.Drawing.Color.Transparent;
             this.pct14.Image = ((System.Drawing.Image)(resources.GetObject("pct14.Image")));
-            this.pct14.Location = new System.Drawing.Point(637, 542);
+            this.pct14.Location = new System.Drawing.Point(624, 513);
             this.pct14.Name = "pct14";
             this.pct14.Size = new System.Drawing.Size(93, 119);
             this.pct14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -306,7 +306,7 @@
             // 
             this.pct15.BackColor = System.Drawing.Color.Transparent;
             this.pct15.Image = ((System.Drawing.Image)(resources.GetObject("pct15.Image")));
-            this.pct15.Location = new System.Drawing.Point(736, 542);
+            this.pct15.Location = new System.Drawing.Point(723, 513);
             this.pct15.Name = "pct15";
             this.pct15.Size = new System.Drawing.Size(93, 119);
             this.pct15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -320,7 +320,7 @@
             this.cmdNon.BackColor = System.Drawing.Color.Transparent;
             this.cmdNon.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmdNon.Image = ((System.Drawing.Image)(resources.GetObject("cmdNon.Image")));
-            this.cmdNon.Location = new System.Drawing.Point(171, 240);
+            this.cmdNon.Location = new System.Drawing.Point(158, 211);
             this.cmdNon.Name = "cmdNon";
             this.cmdNon.Size = new System.Drawing.Size(71, 67);
             this.cmdNon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -333,7 +333,7 @@
             this.cmdOui.BackColor = System.Drawing.Color.Transparent;
             this.cmdOui.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmdOui.Image = ((System.Drawing.Image)(resources.GetObject("cmdOui.Image")));
-            this.cmdOui.Location = new System.Drawing.Point(73, 240);
+            this.cmdOui.Location = new System.Drawing.Point(60, 211);
             this.cmdOui.Name = "cmdOui";
             this.cmdOui.Size = new System.Drawing.Size(71, 67);
             this.cmdOui.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -347,7 +347,7 @@
             this.cmdFin.BackColor = System.Drawing.Color.Transparent;
             this.cmdFin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmdFin.Font = new System.Drawing.Font("Vivaldi", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdFin.Location = new System.Drawing.Point(78, 348);
+            this.cmdFin.Location = new System.Drawing.Point(65, 319);
             this.cmdFin.Name = "cmdFin";
             this.cmdFin.Size = new System.Drawing.Size(144, 34);
             this.cmdFin.TabIndex = 60;
@@ -361,7 +361,7 @@
             this.AutoSize = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1050, 728);
+            this.ClientSize = new System.Drawing.Size(1034, 689);
             this.ControlBox = false;
             this.Controls.Add(this.cmdFin);
             this.Controls.Add(this.cmdOui);
