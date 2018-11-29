@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmJeu2));
-            this.lblMsg2 = new System.Windows.Forms.Label();
-            this.lblMsg = new System.Windows.Forms.Label();
             this.pctExit = new System.Windows.Forms.PictureBox();
             this.lblAsk = new System.Windows.Forms.Label();
             this.pct1 = new System.Windows.Forms.PictureBox();
@@ -51,6 +49,8 @@
             this.cmdNon = new System.Windows.Forms.PictureBox();
             this.cmdOui = new System.Windows.Forms.PictureBox();
             this.cmdFin = new System.Windows.Forms.Label();
+            this.pctLose = new System.Windows.Forms.PictureBox();
+            this.pctWin = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pctExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pct1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pct2)).BeginInit();
@@ -69,31 +69,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pct15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmdNon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmdOui)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctLose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctWin)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblMsg2
-            // 
-            this.lblMsg2.AllowDrop = true;
-            this.lblMsg2.AutoEllipsis = true;
-            this.lblMsg2.AutoSize = true;
-            this.lblMsg2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMsg2.ForeColor = System.Drawing.Color.Red;
-            this.lblMsg2.Location = new System.Drawing.Point(81, 489);
-            this.lblMsg2.Name = "lblMsg2";
-            this.lblMsg2.Size = new System.Drawing.Size(0, 18);
-            this.lblMsg2.TabIndex = 43;
-            // 
-            // lblMsg
-            // 
-            this.lblMsg.AllowDrop = true;
-            this.lblMsg.AutoEllipsis = true;
-            this.lblMsg.AutoSize = true;
-            this.lblMsg.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMsg.ForeColor = System.Drawing.Color.Red;
-            this.lblMsg.Location = new System.Drawing.Point(70, 424);
-            this.lblMsg.Name = "lblMsg";
-            this.lblMsg.Size = new System.Drawing.Size(0, 18);
-            this.lblMsg.TabIndex = 42;
             // 
             // pctExit
             // 
@@ -123,6 +101,7 @@
             // pct1
             // 
             this.pct1.BackColor = System.Drawing.Color.Transparent;
+            this.pct1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pct1.Image = ((System.Drawing.Image)(resources.GetObject("pct1.Image")));
             this.pct1.Location = new System.Drawing.Point(525, 13);
             this.pct1.Name = "pct1";
@@ -136,6 +115,7 @@
             // pct2
             // 
             this.pct2.BackColor = System.Drawing.Color.Transparent;
+            this.pct2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pct2.Image = ((System.Drawing.Image)(resources.GetObject("pct2.Image")));
             this.pct2.Location = new System.Drawing.Point(471, 138);
             this.pct2.Name = "pct2";
@@ -149,6 +129,7 @@
             // pct3
             // 
             this.pct3.BackColor = System.Drawing.Color.Transparent;
+            this.pct3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pct3.Image = ((System.Drawing.Image)(resources.GetObject("pct3.Image")));
             this.pct3.Location = new System.Drawing.Point(570, 138);
             this.pct3.Name = "pct3";
@@ -162,6 +143,7 @@
             // pct4
             // 
             this.pct4.BackColor = System.Drawing.Color.Transparent;
+            this.pct4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pct4.Image = ((System.Drawing.Image)(resources.GetObject("pct4.Image")));
             this.pct4.Location = new System.Drawing.Point(426, 263);
             this.pct4.Name = "pct4";
@@ -175,6 +157,7 @@
             // pct8
             // 
             this.pct8.BackColor = System.Drawing.Color.Transparent;
+            this.pct8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pct8.Image = ((System.Drawing.Image)(resources.GetObject("pct8.Image")));
             this.pct8.Location = new System.Drawing.Point(471, 388);
             this.pct8.Name = "pct8";
@@ -188,6 +171,7 @@
             // pct9
             // 
             this.pct9.BackColor = System.Drawing.Color.Transparent;
+            this.pct9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pct9.Image = ((System.Drawing.Image)(resources.GetObject("pct9.Image")));
             this.pct9.Location = new System.Drawing.Point(570, 388);
             this.pct9.Name = "pct9";
@@ -201,6 +185,7 @@
             // pct5
             // 
             this.pct5.BackColor = System.Drawing.Color.Transparent;
+            this.pct5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pct5.Image = ((System.Drawing.Image)(resources.GetObject("pct5.Image")));
             this.pct5.Location = new System.Drawing.Point(525, 263);
             this.pct5.Name = "pct5";
@@ -214,6 +199,7 @@
             // pct6
             // 
             this.pct6.BackColor = System.Drawing.Color.Transparent;
+            this.pct6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pct6.Image = ((System.Drawing.Image)(resources.GetObject("pct6.Image")));
             this.pct6.Location = new System.Drawing.Point(624, 263);
             this.pct6.Name = "pct6";
@@ -227,6 +213,7 @@
             // pct7
             // 
             this.pct7.BackColor = System.Drawing.Color.Transparent;
+            this.pct7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pct7.Image = ((System.Drawing.Image)(resources.GetObject("pct7.Image")));
             this.pct7.Location = new System.Drawing.Point(372, 388);
             this.pct7.Name = "pct7";
@@ -240,6 +227,7 @@
             // pct10
             // 
             this.pct10.BackColor = System.Drawing.Color.Transparent;
+            this.pct10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pct10.Image = ((System.Drawing.Image)(resources.GetObject("pct10.Image")));
             this.pct10.Location = new System.Drawing.Point(669, 388);
             this.pct10.Name = "pct10";
@@ -266,6 +254,7 @@
             // pct12
             // 
             this.pct12.BackColor = System.Drawing.Color.Transparent;
+            this.pct12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pct12.Image = ((System.Drawing.Image)(resources.GetObject("pct12.Image")));
             this.pct12.Location = new System.Drawing.Point(426, 513);
             this.pct12.Name = "pct12";
@@ -279,6 +268,7 @@
             // pct13
             // 
             this.pct13.BackColor = System.Drawing.Color.Transparent;
+            this.pct13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pct13.Image = ((System.Drawing.Image)(resources.GetObject("pct13.Image")));
             this.pct13.Location = new System.Drawing.Point(525, 513);
             this.pct13.Name = "pct13";
@@ -292,6 +282,7 @@
             // pct14
             // 
             this.pct14.BackColor = System.Drawing.Color.Transparent;
+            this.pct14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pct14.Image = ((System.Drawing.Image)(resources.GetObject("pct14.Image")));
             this.pct14.Location = new System.Drawing.Point(624, 513);
             this.pct14.Name = "pct14";
@@ -305,6 +296,7 @@
             // pct15
             // 
             this.pct15.BackColor = System.Drawing.Color.Transparent;
+            this.pct15.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pct15.Image = ((System.Drawing.Image)(resources.GetObject("pct15.Image")));
             this.pct15.Location = new System.Drawing.Point(723, 513);
             this.pct15.Name = "pct15";
@@ -354,6 +346,28 @@
             this.cmdFin.Text = "Fin du tour";
             this.cmdFin.Click += new System.EventHandler(this.cmdFin_Click);
             // 
+            // pctLose
+            // 
+            this.pctLose.BackColor = System.Drawing.Color.Transparent;
+            this.pctLose.Image = ((System.Drawing.Image)(resources.GetObject("pctLose.Image")));
+            this.pctLose.Location = new System.Drawing.Point(215, 59);
+            this.pctLose.Name = "pctLose";
+            this.pctLose.Size = new System.Drawing.Size(601, 521);
+            this.pctLose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctLose.TabIndex = 70;
+            this.pctLose.TabStop = false;
+            // 
+            // pctWin
+            // 
+            this.pctWin.BackColor = System.Drawing.Color.Transparent;
+            this.pctWin.Image = ((System.Drawing.Image)(resources.GetObject("pctWin.Image")));
+            this.pctWin.Location = new System.Drawing.Point(121, 59);
+            this.pctWin.Name = "pctWin";
+            this.pctWin.Size = new System.Drawing.Size(784, 521);
+            this.pctWin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctWin.TabIndex = 69;
+            this.pctWin.TabStop = false;
+            // 
             // frmJeu2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -363,6 +377,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1034, 689);
             this.ControlBox = false;
+            this.Controls.Add(this.pctLose);
+            this.Controls.Add(this.pctWin);
             this.Controls.Add(this.cmdFin);
             this.Controls.Add(this.cmdOui);
             this.Controls.Add(this.cmdNon);
@@ -380,8 +396,6 @@
             this.Controls.Add(this.pct4);
             this.Controls.Add(this.pct3);
             this.Controls.Add(this.pct2);
-            this.Controls.Add(this.lblMsg2);
-            this.Controls.Add(this.lblMsg);
             this.Controls.Add(this.pctExit);
             this.Controls.Add(this.lblAsk);
             this.Controls.Add(this.pct1);
@@ -407,15 +421,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pct15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmdNon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmdOui)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctLose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctWin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblMsg2;
-        private System.Windows.Forms.Label lblMsg;
         private System.Windows.Forms.PictureBox pctExit;
         private System.Windows.Forms.Label lblAsk;
         private System.Windows.Forms.PictureBox pct1;
@@ -436,5 +449,7 @@
         private System.Windows.Forms.PictureBox cmdNon;
         private System.Windows.Forms.PictureBox cmdOui;
         private System.Windows.Forms.Label cmdFin;
+        private System.Windows.Forms.PictureBox pctLose;
+        private System.Windows.Forms.PictureBox pctWin;
     }
 }

@@ -20,6 +20,8 @@ namespace Projet
         {
             InitializeComponent();
             cmdFin.Visible = false;
+            pctWin.Visible = false;
+            pctLose.Visible = false;
         }
 
         private void picture_CLick(object sender, EventArgs e)
@@ -30,27 +32,15 @@ namespace Projet
                 if (pct_clique != null)
                 {
                     pct_clique.Visible = false;
-                    nbrCoups = nbrCoups + 1;
+                    nbrCoups ++;
                     nbrAct--;
-                    lblMsg.Text = "";
-                    lblMsg2.Text = "";
                     jo_or = true;
                     Fin_de_jeu();
                     if (nbrCoups >= 3)
                     {
-                        if (nbrCoups == 0)
-                        {
-                            lblMsg.Text = "Vous n'avez pas joué votre tour !";
-                            lblMsg2.Text = "Veuillez enlever au moins un stylo !";
-                        }
-                        else
-                        {
-                            lblMsg.Text = "";
-                            lblMsg2.Text = "";
-                            Nbr_Ordi();
-                            jo_or = false;
-                            Fin_de_jeu();
-                        }
+                        Nbr_Ordi();
+                        jo_or = false;
+                        Fin_de_jeu();
                     }
                 }
             }
@@ -59,29 +49,29 @@ namespace Projet
 
         private void Nbr_Ordi()
         {
-            if (nbrAct - 1 == 13 | nbrAct - 2 == 13)
+            if (nbrAct - 1 == 12 | nbrAct - 2 == 12 | nbrAct - 3 == 12)
             {
-                nbAlea = nbrAct - 13;
+                nbAlea = nbrAct - 12;
                 nbrAct = nbrAct - nbAlea;
             }
-            else if (nbrAct == 13 | nbrAct == 9 | nbrAct == 5 | nbrAct == 1)
+            else if (nbrAct == 12 | nbrAct == 8 | nbrAct == 4 | nbrAct == 1)
             {
                 nbAlea = 1;
+                nbrAct = nbrAct - 1;
+            }
+            else if (nbrAct - 1 == 8 | nbrAct - 2 == 8 | nbrAct - 3 == 8)
+            {
+                nbAlea = nbrAct - 8;
                 nbrAct = nbrAct - nbAlea;
             }
-            else if (nbrAct - 1 == 9 | nbrAct - 2 == 9 | nbrAct - 3 == 9)
+            else if (nbrAct - 1 == 4 | nbrAct - 2 == 4 | nbrAct - 3 == 4)
             {
-                nbAlea = nbrAct - 9;
+                nbAlea = nbrAct - 4;
                 nbrAct = nbrAct - nbAlea;
             }
-            else if (nbrAct - 1 == 5 | nbrAct - 2 == 5 | nbrAct - 3 == 5)
+            else if (nbrAct - 1 == 0 | nbrAct - 2 == 0 | nbrAct - 3 == 0)
             {
-                nbAlea = nbrAct - 5;
-                nbrAct = nbrAct - nbAlea;
-            }
-            else if (nbrAct - 1 == 1 | nbrAct - 2 == 1 | nbrAct - 3 == 1)
-            {
-                nbAlea = nbrAct - 1;
+                nbAlea = nbrAct;
                 nbrAct = nbrAct - nbAlea;
             }
             Tour_Ordi(nbAlea);
@@ -98,13 +88,11 @@ namespace Projet
             
             if (nbrCoups == 0)
             {
-                lblMsg.Text = "Vous n'avez pas joué votre tour !";
-                lblMsg2.Text = "Veuillez enlever au moins un stylo !";
+                frmAlerte fenetreAlerte = new frmAlerte();
+                fenetreAlerte.ShowDialog();
             }
             else
             {
-                lblMsg.Text = "";
-                lblMsg2.Text = "";
                 Nbr_Ordi();
                 jo_or = false;
                 Fin_de_jeu();
@@ -139,13 +127,14 @@ namespace Projet
             {
                 if (jo_or == true)
                 {
-                    lblMsg.Text = "Vous avez perdu...";
+                    pctWin.Visible = true;
+                    cmdFin.Visible = false;
                 }
                 else
                 {
-                    lblMsg.Text = "Vous avez gagné !";
+                    pctLose.Visible = true;
+                    cmdFin.Visible = false;
                 }
-                cmdFin.Visible = false;
             }
         }
 

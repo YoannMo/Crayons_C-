@@ -52,6 +52,15 @@
             this.txtJ1 = new System.Windows.Forms.TextBox();
             this.txtJ2 = new System.Windows.Forms.TextBox();
             this.lblGo = new System.Windows.Forms.Label();
+            this.pctGl = new System.Windows.Forms.PictureBox();
+            this.lblTxt4 = new System.Windows.Forms.Label();
+            this.lblTxt3 = new System.Windows.Forms.Label();
+            this.lblTxt2 = new System.Windows.Forms.Label();
+            this.lblTxt1 = new System.Windows.Forms.Label();
+            this.lblRegles = new System.Windows.Forms.Label();
+            this.pctBack = new System.Windows.Forms.PictureBox();
+            this.lblBack1 = new System.Windows.Forms.Label();
+            this.lblBack2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.cmdNiv1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmdNiv2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctExit)).BeginInit();
@@ -61,6 +70,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pctEtHa3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctEtHa2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctEtHa1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctGl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctBack)).BeginInit();
             this.SuspendLayout();
             // 
             // lblJeu
@@ -345,6 +356,110 @@
             this.lblGo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lblGo.Click += new System.EventHandler(this.lblGo_Click);
             // 
+            // pctGl
+            // 
+            this.pctGl.BackColor = System.Drawing.Color.Transparent;
+            this.pctGl.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pctGl.Image = ((System.Drawing.Image)(resources.GetObject("pctGl.Image")));
+            this.pctGl.Location = new System.Drawing.Point(208, 383);
+            this.pctGl.Name = "pctGl";
+            this.pctGl.Size = new System.Drawing.Size(305, 149);
+            this.pctGl.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctGl.TabIndex = 67;
+            this.pctGl.TabStop = false;
+            // 
+            // lblTxt4
+            // 
+            this.lblTxt4.AutoSize = true;
+            this.lblTxt4.BackColor = System.Drawing.Color.Transparent;
+            this.lblTxt4.Font = new System.Drawing.Font("Vivaldi", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTxt4.Location = new System.Drawing.Point(150, 314);
+            this.lblTxt4.Name = "lblTxt4";
+            this.lblTxt4.Size = new System.Drawing.Size(413, 32);
+            this.lblTxt4.TabIndex = 65;
+            this.lblTxt4.Text = "3: Enlever le dernier crayon pour gagner!";
+            // 
+            // lblTxt3
+            // 
+            this.lblTxt3.AutoSize = true;
+            this.lblTxt3.BackColor = System.Drawing.Color.Transparent;
+            this.lblTxt3.Font = new System.Drawing.Font("Vivaldi", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTxt3.Location = new System.Drawing.Point(150, 254);
+            this.lblTxt3.Name = "lblTxt3";
+            this.lblTxt3.Size = new System.Drawing.Size(428, 32);
+            this.lblTxt3.TabIndex = 64;
+            this.lblTxt3.Text = "2: Enlever à tour de rôle 1,2 ou 3 crayons.";
+            // 
+            // lblTxt2
+            // 
+            this.lblTxt2.AutoSize = true;
+            this.lblTxt2.BackColor = System.Drawing.Color.Transparent;
+            this.lblTxt2.Font = new System.Drawing.Font("Vivaldi", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTxt2.Location = new System.Drawing.Point(191, 196);
+            this.lblTxt2.Name = "lblTxt2";
+            this.lblTxt2.Size = new System.Drawing.Size(326, 32);
+            this.lblTxt2.TabIndex = 63;
+            this.lblTxt2.Text = "1: Choisir de commencer ou non ";
+            // 
+            // lblTxt1
+            // 
+            this.lblTxt1.AutoSize = true;
+            this.lblTxt1.BackColor = System.Drawing.Color.Transparent;
+            this.lblTxt1.Font = new System.Drawing.Font("Vivaldi", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTxt1.Location = new System.Drawing.Point(263, 138);
+            this.lblTxt1.Name = "lblTxt1";
+            this.lblTxt1.Size = new System.Drawing.Size(194, 32);
+            this.lblTxt1.TabIndex = 62;
+            this.lblTxt1.Text = "Il y a 15 crayons";
+            // 
+            // lblRegles
+            // 
+            this.lblRegles.AutoSize = true;
+            this.lblRegles.BackColor = System.Drawing.Color.Transparent;
+            this.lblRegles.Font = new System.Drawing.Font("Vivaldi", 72F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRegles.Location = new System.Drawing.Point(121, 9);
+            this.lblRegles.Name = "lblRegles";
+            this.lblRegles.Size = new System.Drawing.Size(497, 114);
+            this.lblRegles.TabIndex = 61;
+            this.lblRegles.Text = "Règles du jeu";
+            // 
+            // pctBack
+            // 
+            this.pctBack.BackColor = System.Drawing.Color.Transparent;
+            this.pctBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pctBack.Image = ((System.Drawing.Image)(resources.GetObject("pctBack.Image")));
+            this.pctBack.Location = new System.Drawing.Point(25, 471);
+            this.pctBack.Name = "pctBack";
+            this.pctBack.Size = new System.Drawing.Size(77, 61);
+            this.pctBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctBack.TabIndex = 68;
+            this.pctBack.TabStop = false;
+            this.pctBack.Click += new System.EventHandler(this.pctBack_Click);
+            // 
+            // lblBack1
+            // 
+            this.lblBack1.AutoSize = true;
+            this.lblBack1.BackColor = System.Drawing.Color.Transparent;
+            this.lblBack1.Font = new System.Drawing.Font("Vivaldi", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBack1.Location = new System.Drawing.Point(95, 472);
+            this.lblBack1.Name = "lblBack1";
+            this.lblBack1.Size = new System.Drawing.Size(48, 22);
+            this.lblBack1.TabIndex = 69;
+            this.lblBack1.Text = "Solo";
+            this.lblBack1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblBack2
+            // 
+            this.lblBack2.AutoSize = true;
+            this.lblBack2.BackColor = System.Drawing.Color.Transparent;
+            this.lblBack2.Font = new System.Drawing.Font("Vivaldi", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBack2.Location = new System.Drawing.Point(95, 510);
+            this.lblBack2.Name = "lblBack2";
+            this.lblBack2.Size = new System.Drawing.Size(53, 22);
+            this.lblBack2.TabIndex = 70;
+            this.lblBack2.Text = "Multi";
+            this.lblBack2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // frmAccueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -353,6 +468,15 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(744, 562);
             this.ControlBox = false;
+            this.Controls.Add(this.lblBack2);
+            this.Controls.Add(this.lblBack1);
+            this.Controls.Add(this.pctBack);
+            this.Controls.Add(this.pctGl);
+            this.Controls.Add(this.lblTxt4);
+            this.Controls.Add(this.lblTxt3);
+            this.Controls.Add(this.lblTxt2);
+            this.Controls.Add(this.lblTxt1);
+            this.Controls.Add(this.lblRegles);
             this.Controls.Add(this.lblGo);
             this.Controls.Add(this.txtJ2);
             this.Controls.Add(this.txtJ1);
@@ -390,6 +514,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pctEtHa3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctEtHa2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctEtHa1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctGl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctBack)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -419,5 +545,14 @@
         private System.Windows.Forms.TextBox txtJ1;
         private System.Windows.Forms.TextBox txtJ2;
         private System.Windows.Forms.Label lblGo;
+        private System.Windows.Forms.PictureBox pctGl;
+        private System.Windows.Forms.Label lblTxt4;
+        private System.Windows.Forms.Label lblTxt3;
+        private System.Windows.Forms.Label lblTxt2;
+        private System.Windows.Forms.Label lblTxt1;
+        private System.Windows.Forms.Label lblRegles;
+        private System.Windows.Forms.PictureBox pctBack;
+        private System.Windows.Forms.Label lblBack1;
+        private System.Windows.Forms.Label lblBack2;
     }
 }

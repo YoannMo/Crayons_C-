@@ -21,6 +21,8 @@ namespace Projet
         {
             InitializeComponent();
             cmdFin.Visible = false;
+            pctWin.Visible = false;
+            pctLose.Visible = false;
         }
 
         private void cmdOui_Click(object sender, EventArgs e)
@@ -57,8 +59,6 @@ namespace Projet
                     if (nbrCoups >= 3)
                     {
                         nbAlea = rnd.Next(1, 4);
-                        lblMsg.Text = "";
-                        lblMsg2.Text = "";
                         Tour_Ordi(nbAlea);
                         nbrIm = nbrIm + nbAlea;
                         jo_or = false;
@@ -72,14 +72,12 @@ namespace Projet
 
             if (nbrCoups == 0)
             {
-                lblMsg.Text = "Vous n'avez pas joué votre tour !";
-                lblMsg2.Text = "Veuillez enlever au moins un stylo !";
+                frmAlerte fenetreAlerte = new frmAlerte();
+                fenetreAlerte.ShowDialog();
             }
             else
             {
                 nbAlea = rnd.Next(1, 4);
-                lblMsg.Text = "";
-                lblMsg2.Text = "";
                 Tour_Ordi(nbAlea);
                 nbrIm = nbrIm + nbAlea;
                 jo_or = false;
@@ -219,11 +217,13 @@ namespace Projet
             {
                 if (jo_or == true)
                 {
-                    lblMsg.Text = "Vous avez gagné...";
+                    pctWin.Visible = true;
+                    cmdFin.Visible = false;
                 }
                 else
                 {
-                    lblMsg.Text = "Vous avez perdu !";
+                    pctLose.Visible = true;
+                    cmdFin.Visible = false;
                 }
                 cmdFin.Visible = false;
             }

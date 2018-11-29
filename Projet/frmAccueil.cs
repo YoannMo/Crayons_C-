@@ -32,19 +32,24 @@ namespace Projet
 
         private void cmdPlay_Click(object sender, EventArgs e)
         {
-            lblSolo.Visible = true;
-            lblMulti.Visible = true;
-            cmdPlay.Visible = false;
-            cmdHelp.Visible = false;
-            cmdExit.Visible = false;
-            pctTrait2.Visible = false;
-            pctExit.Visible = true;
+            Jeux();
         }
 
         private void cmdHelp_Click(object sender, EventArgs e)
         {
-            frmPrincipe fenetreListe = new frmPrincipe();
-            fenetreListe.ShowDialog();
+            lblRegles.Visible = true;
+            lblTxt1.Visible = true;
+            lblTxt2.Visible = true;
+            lblTxt3.Visible = true;
+            lblTxt4.Visible = true;
+            pctGl.Visible = true;
+            pctExit.Visible = true;
+            cmdPlay.Visible = false;
+            cmdHelp.Visible = false;
+            cmdExit.Visible = false;
+            pctTrait1.Visible = false;
+            pctTrait2.Visible = false;
+            lblJeu.Visible = false;
         }
 
         private void cmdNiv2_Click(object sender, EventArgs e)
@@ -57,6 +62,42 @@ namespace Projet
         private void pctExit_Click(object sender, EventArgs e)
         {
             Principal();
+        }
+
+        private void Jeux()
+        {
+            lblSolo.Visible = true;
+            lblMulti.Visible = true;
+            cmdPlay.Visible = false;
+            cmdHelp.Visible = false;
+            cmdExit.Visible = false;
+            pctTrait1.Visible = true;
+            pctTrait2.Visible = false;
+            pctExit.Visible = true;
+            cmdNiv1.Visible = false;
+            cmdNiv2.Visible = false;
+            lblEz.Visible = false;
+            lblHard.Visible = false;
+            pctEtEz.Visible = false;
+            pctEtHa1.Visible = false;
+            pctEtHa2.Visible = false;
+            pctEtHa3.Visible = false;
+            lblTitre.Visible = false;
+            lblJeu.Visible = true;
+            lblJ1.Visible = false;
+            lblJ2.Visible = false;
+            txtJ1.Visible = false;
+            txtJ2.Visible = false;
+            lblGo.Visible = false;
+            lblRegles.Visible = false;
+            lblTxt1.Visible = false;
+            lblTxt2.Visible = false;
+            lblTxt3.Visible = false;
+            lblTxt4.Visible = false;
+            pctGl.Visible = false;
+            pctBack.Visible = false;
+            lblBack1.Visible = false;
+            lblBack2.Visible = false;
         }
 
         private void Principal()
@@ -84,6 +125,15 @@ namespace Projet
             txtJ2.Visible = false;
             lblJeu.Visible = true;
             lblGo.Visible = false;
+            lblRegles.Visible = false;
+            lblTxt1.Visible = false;
+            lblTxt2.Visible = false;
+            lblTxt3.Visible = false;
+            lblTxt4.Visible = false;
+            pctGl.Visible = false;
+            pctBack.Visible = false;
+            lblBack1.Visible = false;
+            lblBack2.Visible = false;
         }
 
         private void lblSolo_Click(object sender, EventArgs e)
@@ -105,6 +155,9 @@ namespace Projet
             lblSolo.Visible = false;
             lblMulti.Visible = false;
             pctTrait1.Visible = false;
+            pctBack.Visible = true;
+            lblBack1.Visible = true;
+            lblBack2.Visible = true;
         }
 
         private void lblMulti_Click(object sender, EventArgs e)
@@ -115,22 +168,26 @@ namespace Projet
             txtJ1.Visible = true;
             txtJ2.Visible = true;
             lblJeu.Visible = false;
-            pctEtEz.Visible = false;
-            pctEtHa1.Visible = false;
-            pctEtHa2.Visible = false;
-            pctEtHa3.Visible = false;
             lblSolo.Visible = false;
             lblMulti.Visible = false;
             pctTrait1.Visible = false;
             pctExit.Visible = true;
             lblGo.Visible = true;
+            pctBack.Visible = true;
+            lblBack1.Visible = true;
+            lblBack2.Visible = true;
         }
 
         private void lblGo_Click(object sender, EventArgs e)
         {
-            frmJeuMulti fenetreJeuMulti = new frmJeuMulti();
+            frmJeuMulti fenetreJeuMulti = new frmJeuMulti(txtJ1.Text, txtJ2.Text);
             fenetreJeuMulti.ShowDialog();
             Principal();
+        }
+
+        private void pctBack_Click(object sender, EventArgs e)
+        {
+            Jeux();
         }
     }
 }

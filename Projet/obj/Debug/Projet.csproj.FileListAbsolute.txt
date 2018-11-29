@@ -9,6 +9,10 @@ C:\Users\yoann\source\repos\Projet\Projet\obj\Debug\Projet.csproj.CoreCompileInp
 C:\Users\yoann\source\repos\Projet\Projet\obj\Debug\Projet.exe
 C:\Users\yoann\source\repos\Projet\Projet\obj\Debug\Projet.pdb
 C:\Users\yoann\source\repos\Projet\Projet\obj\Debug\Projet.frmAccueil.resources
-C:\Users\yoann\source\repos\Projet\Projet\obj\Debug\Projet.frmPrincipe.resources
 C:\Users\yoann\source\repos\Projet\Projet\obj\Debug\Projet.frmJeu2.resources
 C:\Users\yoann\source\repos\Projet\Projet\obj\Debug\Projet.frmJeuMulti.resources
+C:\Users\yoann\source\repos\Projet\Projet\bin\Debug\Projet.exe.manifest
+C:\Users\yoann\source\repos\Projet\Projet\bin\Debug\Projet.application
+C:\Users\yoann\source\repos\Projet\Projet\obj\Debug\Projet.exe.manifest
+C:\Users\yoann\source\repos\Projet\Projet\obj\Debug\Projet.application
+C:\Users\yoann\source\repos\Projet\Projet\obj\Debug\Projet.frmAlerte.resources
