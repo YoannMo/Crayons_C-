@@ -44,13 +44,14 @@
             this.pct3 = new System.Windows.Forms.PictureBox();
             this.pct2 = new System.Windows.Forms.PictureBox();
             this.pct15 = new System.Windows.Forms.PictureBox();
-            this.lblAsk = new System.Windows.Forms.Label();
-            this.cmdOui = new System.Windows.Forms.Button();
-            this.cmdNon = new System.Windows.Forms.Button();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.cmdFin = new System.Windows.Forms.Button();
             this.lblMsg = new System.Windows.Forms.Label();
             this.lblMsg2 = new System.Windows.Forms.Label();
+            this.cmdFin = new System.Windows.Forms.Label();
+            this.cmdOui = new System.Windows.Forms.PictureBox();
+            this.cmdNon = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblAsk = new System.Windows.Forms.Label();
+            this.pctExit = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pct5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pct13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pct10)).BeginInit();
@@ -66,13 +67,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pct3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pct2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pct15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmdOui)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmdNon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctExit)).BeginInit();
             this.SuspendLayout();
             // 
             // pct5
             // 
+            this.pct5.BackColor = System.Drawing.Color.Transparent;
             this.pct5.Image = ((System.Drawing.Image)(resources.GetObject("pct5.Image")));
-            this.pct5.Location = new System.Drawing.Point(611, 313);
+            this.pct5.Location = new System.Drawing.Point(513, 280);
             this.pct5.Name = "pct5";
             this.pct5.Size = new System.Drawing.Size(93, 119);
             this.pct5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -83,8 +87,9 @@
             // 
             // pct13
             // 
+            this.pct13.BackColor = System.Drawing.Color.Transparent;
             this.pct13.Image = ((System.Drawing.Image)(resources.GetObject("pct13.Image")));
-            this.pct13.Location = new System.Drawing.Point(611, 563);
+            this.pct13.Location = new System.Drawing.Point(513, 530);
             this.pct13.Name = "pct13";
             this.pct13.Size = new System.Drawing.Size(93, 119);
             this.pct13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -95,8 +100,9 @@
             // 
             // pct10
             // 
+            this.pct10.BackColor = System.Drawing.Color.Transparent;
             this.pct10.Image = ((System.Drawing.Image)(resources.GetObject("pct10.Image")));
-            this.pct10.Location = new System.Drawing.Point(761, 438);
+            this.pct10.Location = new System.Drawing.Point(663, 405);
             this.pct10.Name = "pct10";
             this.pct10.Size = new System.Drawing.Size(93, 119);
             this.pct10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -107,8 +113,9 @@
             // 
             // pct12
             // 
+            this.pct12.BackColor = System.Drawing.Color.Transparent;
             this.pct12.Image = ((System.Drawing.Image)(resources.GetObject("pct12.Image")));
-            this.pct12.Location = new System.Drawing.Point(512, 563);
+            this.pct12.Location = new System.Drawing.Point(414, 530);
             this.pct12.Name = "pct12";
             this.pct12.Size = new System.Drawing.Size(93, 119);
             this.pct12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -119,8 +126,9 @@
             // 
             // pct7
             // 
+            this.pct7.BackColor = System.Drawing.Color.Transparent;
             this.pct7.Image = ((System.Drawing.Image)(resources.GetObject("pct7.Image")));
-            this.pct7.Location = new System.Drawing.Point(464, 438);
+            this.pct7.Location = new System.Drawing.Point(366, 405);
             this.pct7.Name = "pct7";
             this.pct7.Size = new System.Drawing.Size(93, 119);
             this.pct7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -131,8 +139,9 @@
             // 
             // pct6
             // 
+            this.pct6.BackColor = System.Drawing.Color.Transparent;
             this.pct6.Image = ((System.Drawing.Image)(resources.GetObject("pct6.Image")));
-            this.pct6.Location = new System.Drawing.Point(710, 313);
+            this.pct6.Location = new System.Drawing.Point(612, 280);
             this.pct6.Name = "pct6";
             this.pct6.Size = new System.Drawing.Size(93, 119);
             this.pct6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -143,8 +152,9 @@
             // 
             // pct9
             // 
+            this.pct9.BackColor = System.Drawing.Color.Transparent;
             this.pct9.Image = ((System.Drawing.Image)(resources.GetObject("pct9.Image")));
-            this.pct9.Location = new System.Drawing.Point(662, 438);
+            this.pct9.Location = new System.Drawing.Point(564, 405);
             this.pct9.Name = "pct9";
             this.pct9.Size = new System.Drawing.Size(93, 119);
             this.pct9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -155,8 +165,9 @@
             // 
             // pct4
             // 
+            this.pct4.BackColor = System.Drawing.Color.Transparent;
             this.pct4.Image = ((System.Drawing.Image)(resources.GetObject("pct4.Image")));
-            this.pct4.Location = new System.Drawing.Point(512, 313);
+            this.pct4.Location = new System.Drawing.Point(414, 280);
             this.pct4.Name = "pct4";
             this.pct4.Size = new System.Drawing.Size(93, 119);
             this.pct4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -167,8 +178,9 @@
             // 
             // pct11
             // 
+            this.pct11.BackColor = System.Drawing.Color.Transparent;
             this.pct11.Image = ((System.Drawing.Image)(resources.GetObject("pct11.Image")));
-            this.pct11.Location = new System.Drawing.Point(413, 563);
+            this.pct11.Location = new System.Drawing.Point(315, 530);
             this.pct11.Name = "pct11";
             this.pct11.Size = new System.Drawing.Size(93, 119);
             this.pct11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -179,8 +191,9 @@
             // 
             // pct14
             // 
+            this.pct14.BackColor = System.Drawing.Color.Transparent;
             this.pct14.Image = ((System.Drawing.Image)(resources.GetObject("pct14.Image")));
-            this.pct14.Location = new System.Drawing.Point(710, 563);
+            this.pct14.Location = new System.Drawing.Point(612, 530);
             this.pct14.Name = "pct14";
             this.pct14.Size = new System.Drawing.Size(93, 119);
             this.pct14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -191,8 +204,9 @@
             // 
             // pct1
             // 
+            this.pct1.BackColor = System.Drawing.Color.Transparent;
             this.pct1.Image = ((System.Drawing.Image)(resources.GetObject("pct1.Image")));
-            this.pct1.Location = new System.Drawing.Point(611, 63);
+            this.pct1.Location = new System.Drawing.Point(513, 30);
             this.pct1.Name = "pct1";
             this.pct1.Size = new System.Drawing.Size(93, 119);
             this.pct1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -203,8 +217,9 @@
             // 
             // pct8
             // 
+            this.pct8.BackColor = System.Drawing.Color.Transparent;
             this.pct8.Image = ((System.Drawing.Image)(resources.GetObject("pct8.Image")));
-            this.pct8.Location = new System.Drawing.Point(563, 438);
+            this.pct8.Location = new System.Drawing.Point(465, 405);
             this.pct8.Name = "pct8";
             this.pct8.Size = new System.Drawing.Size(93, 119);
             this.pct8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -215,8 +230,9 @@
             // 
             // pct3
             // 
+            this.pct3.BackColor = System.Drawing.Color.Transparent;
             this.pct3.Image = ((System.Drawing.Image)(resources.GetObject("pct3.Image")));
-            this.pct3.Location = new System.Drawing.Point(662, 188);
+            this.pct3.Location = new System.Drawing.Point(564, 155);
             this.pct3.Name = "pct3";
             this.pct3.Size = new System.Drawing.Size(93, 119);
             this.pct3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -227,8 +243,9 @@
             // 
             // pct2
             // 
+            this.pct2.BackColor = System.Drawing.Color.Transparent;
             this.pct2.Image = ((System.Drawing.Image)(resources.GetObject("pct2.Image")));
-            this.pct2.Location = new System.Drawing.Point(563, 188);
+            this.pct2.Location = new System.Drawing.Point(465, 155);
             this.pct2.Name = "pct2";
             this.pct2.Size = new System.Drawing.Size(93, 119);
             this.pct2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -239,8 +256,9 @@
             // 
             // pct15
             // 
+            this.pct15.BackColor = System.Drawing.Color.Transparent;
             this.pct15.Image = ((System.Drawing.Image)(resources.GetObject("pct15.Image")));
-            this.pct15.Location = new System.Drawing.Point(809, 563);
+            this.pct15.Location = new System.Drawing.Point(711, 530);
             this.pct15.Name = "pct15";
             this.pct15.Size = new System.Drawing.Size(93, 119);
             this.pct15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -248,58 +266,6 @@
             this.pct15.TabStop = false;
             this.pct15.Tag = "15";
             this.pct15.Click += new System.EventHandler(this.picture_CLick);
-            // 
-            // lblAsk
-            // 
-            this.lblAsk.AutoSize = true;
-            this.lblAsk.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAsk.Location = new System.Drawing.Point(105, 212);
-            this.lblAsk.Name = "lblAsk";
-            this.lblAsk.Size = new System.Drawing.Size(156, 25);
-            this.lblAsk.TabIndex = 15;
-            this.lblAsk.Text = "Commencer ?";
-            // 
-            // cmdOui
-            // 
-            this.cmdOui.Location = new System.Drawing.Point(100, 271);
-            this.cmdOui.Name = "cmdOui";
-            this.cmdOui.Size = new System.Drawing.Size(63, 36);
-            this.cmdOui.TabIndex = 16;
-            this.cmdOui.Text = "Oui";
-            this.cmdOui.UseVisualStyleBackColor = true;
-            this.cmdOui.Click += new System.EventHandler(this.cmdOui_Click);
-            // 
-            // cmdNon
-            // 
-            this.cmdNon.Location = new System.Drawing.Point(198, 271);
-            this.cmdNon.Name = "cmdNon";
-            this.cmdNon.Size = new System.Drawing.Size(63, 36);
-            this.cmdNon.TabIndex = 17;
-            this.cmdNon.Text = "Non";
-            this.cmdNon.UseVisualStyleBackColor = true;
-            this.cmdNon.Click += new System.EventHandler(this.cmdNon_Click);
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
-            this.pictureBox15.Location = new System.Drawing.Point(969, 679);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(71, 56);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox15.TabIndex = 18;
-            this.pictureBox15.TabStop = false;
-            this.pictureBox15.Click += new System.EventHandler(this.pictureBox15_Click);
-            // 
-            // cmdFin
-            // 
-            this.cmdFin.Location = new System.Drawing.Point(119, 346);
-            this.cmdFin.Name = "cmdFin";
-            this.cmdFin.Size = new System.Drawing.Size(122, 49);
-            this.cmdFin.TabIndex = 19;
-            this.cmdFin.Text = "Fin du tour";
-            this.cmdFin.UseVisualStyleBackColor = true;
-            this.cmdFin.Click += new System.EventHandler(this.cmdFin_Click);
             // 
             // lblMsg
             // 
@@ -325,19 +291,97 @@
             this.lblMsg2.Size = new System.Drawing.Size(0, 18);
             this.lblMsg2.TabIndex = 21;
             // 
+            // cmdFin
+            // 
+            this.cmdFin.AutoSize = true;
+            this.cmdFin.BackColor = System.Drawing.Color.Transparent;
+            this.cmdFin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmdFin.Font = new System.Drawing.Font("Vivaldi", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdFin.Location = new System.Drawing.Point(81, 334);
+            this.cmdFin.Name = "cmdFin";
+            this.cmdFin.Size = new System.Drawing.Size(144, 34);
+            this.cmdFin.TabIndex = 65;
+            this.cmdFin.Text = "Fin du tour";
+            this.cmdFin.Click += new System.EventHandler(this.cmdFin_Click);
+            // 
+            // cmdOui
+            // 
+            this.cmdOui.BackColor = System.Drawing.Color.Transparent;
+            this.cmdOui.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmdOui.Image = ((System.Drawing.Image)(resources.GetObject("cmdOui.Image")));
+            this.cmdOui.Location = new System.Drawing.Point(76, 226);
+            this.cmdOui.Name = "cmdOui";
+            this.cmdOui.Size = new System.Drawing.Size(71, 67);
+            this.cmdOui.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cmdOui.TabIndex = 64;
+            this.cmdOui.TabStop = false;
+            this.cmdOui.Click += new System.EventHandler(this.cmdOui_Click);
+            // 
+            // cmdNon
+            // 
+            this.cmdNon.BackColor = System.Drawing.Color.Transparent;
+            this.cmdNon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmdNon.Image = ((System.Drawing.Image)(resources.GetObject("cmdNon.Image")));
+            this.cmdNon.Location = new System.Drawing.Point(170, 226);
+            this.cmdNon.Name = "cmdNon";
+            this.cmdNon.Size = new System.Drawing.Size(71, 67);
+            this.cmdNon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cmdNon.TabIndex = 63;
+            this.cmdNon.TabStop = false;
+            this.cmdNon.Click += new System.EventHandler(this.cmdNon_Click);
+            // 
+            // label2
+            // 
+            this.label2.AllowDrop = true;
+            this.label2.AutoEllipsis = true;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(310, 437);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 18);
+            this.label2.TabIndex = 62;
+            // 
+            // lblAsk
+            // 
+            this.lblAsk.AutoSize = true;
+            this.lblAsk.BackColor = System.Drawing.Color.Transparent;
+            this.lblAsk.Font = new System.Drawing.Font("Vivaldi", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAsk.Location = new System.Drawing.Point(68, 153);
+            this.lblAsk.Name = "lblAsk";
+            this.lblAsk.Size = new System.Drawing.Size(189, 44);
+            this.lblAsk.TabIndex = 61;
+            this.lblAsk.Text = "Commencer ?";
+            // 
+            // pctExit
+            // 
+            this.pctExit.BackColor = System.Drawing.Color.Transparent;
+            this.pctExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pctExit.Image = ((System.Drawing.Image)(resources.GetObject("pctExit.Image")));
+            this.pctExit.Location = new System.Drawing.Point(877, 547);
+            this.pctExit.Name = "pctExit";
+            this.pctExit.Size = new System.Drawing.Size(154, 130);
+            this.pctExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctExit.TabIndex = 66;
+            this.pctExit.TabStop = false;
+            this.pctExit.Click += new System.EventHandler(this.pictureBox15_Click);
+            // 
             // frmJeu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1052, 747);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1034, 689);
             this.ControlBox = false;
+            this.Controls.Add(this.pctExit);
+            this.Controls.Add(this.cmdFin);
+            this.Controls.Add(this.cmdOui);
+            this.Controls.Add(this.cmdNon);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblAsk);
             this.Controls.Add(this.lblMsg2);
             this.Controls.Add(this.lblMsg);
-            this.Controls.Add(this.cmdFin);
-            this.Controls.Add(this.pictureBox15);
-            this.Controls.Add(this.cmdNon);
-            this.Controls.Add(this.cmdOui);
-            this.Controls.Add(this.lblAsk);
             this.Controls.Add(this.pct15);
             this.Controls.Add(this.pct2);
             this.Controls.Add(this.pct3);
@@ -353,6 +397,7 @@
             this.Controls.Add(this.pct10);
             this.Controls.Add(this.pct13);
             this.Controls.Add(this.pct5);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmJeu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -371,7 +416,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pct3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pct2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pct15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmdOui)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmdNon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctExit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -394,13 +441,14 @@
         private System.Windows.Forms.PictureBox pct3;
         private System.Windows.Forms.PictureBox pct2;
         private System.Windows.Forms.PictureBox pct15;
-        private System.Windows.Forms.Label lblAsk;
-        private System.Windows.Forms.Button cmdOui;
-        private System.Windows.Forms.Button cmdNon;
-        private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.Button cmdFin;
         private System.Windows.Forms.Label lblMsg;
         private System.Windows.Forms.Label lblMsg2;
+        private System.Windows.Forms.Label cmdFin;
+        private System.Windows.Forms.PictureBox cmdOui;
+        private System.Windows.Forms.PictureBox cmdNon;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblAsk;
+        private System.Windows.Forms.PictureBox pctExit;
     }
 }
 

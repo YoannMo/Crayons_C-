@@ -20,6 +20,7 @@ namespace Projet
         public frmJeu()
         {
             InitializeComponent();
+            cmdFin.Visible = false;
         }
 
         private void cmdOui_Click(object sender, EventArgs e)
@@ -27,6 +28,7 @@ namespace Projet
             cmdOui.Visible = false;
             cmdNon.Visible = false;
             lblAsk.Visible = false;
+            cmdFin.Visible = true;
         }
 
         private void cmdNon_Click(object sender, EventArgs e)
@@ -37,6 +39,7 @@ namespace Projet
             nbAlea = rnd.Next(1, 4);
             Tour_Ordi(nbAlea);
             nbrIm = nbrIm + nbAlea;
+            cmdFin.Visible = true;
         }
 
         private void picture_CLick(object sender, EventArgs e)
@@ -216,11 +219,11 @@ namespace Projet
             {
                 if (jo_or == true)
                 {
-                    lblMsg.Text = "Vous avez perdu...";
+                    lblMsg.Text = "Vous avez gagné...";
                 }
                 else
                 {
-                    lblMsg.Text = "Vous avez gagné !";
+                    lblMsg.Text = "Vous avez perdu !";
                 }
                 cmdFin.Visible = false;
             }

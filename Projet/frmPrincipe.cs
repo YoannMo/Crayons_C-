@@ -21,5 +21,10 @@ namespace Projet
         {
             this.Close();
         }
+
+        private void pctExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -19,6 +19,7 @@ namespace Projet
         public frmJeu2()
         {
             InitializeComponent();
+            cmdFin.Visible = false;
         }
 
         private void picture_CLick(object sender, EventArgs e)
@@ -115,6 +116,7 @@ namespace Projet
             cmdOui.Visible = false;
             cmdNon.Visible = false;
             lblAsk.Visible = false;
+            cmdFin.Visible = true;
         }
 
         private void cmdNon_Click(object sender, EventArgs e)
@@ -123,6 +125,7 @@ namespace Projet
             cmdNon.Visible = false;
             lblAsk.Visible = false;
             Nbr_Ordi();
+            cmdFin.Visible = true;
         }
 
         private void lblAsk_Click(object sender, EventArgs e)
