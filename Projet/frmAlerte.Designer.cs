@@ -69,9 +69,9 @@
             this.lblAl2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.lblAl2.Location = new System.Drawing.Point(111, 176);
             this.lblAl2.Name = "lblAl2";
-            this.lblAl2.Size = new System.Drawing.Size(374, 27);
+            this.lblAl2.Size = new System.Drawing.Size(377, 27);
             this.lblAl2.TabIndex = 2;
-            this.lblAl2.Text = "Veuillez enlever au moins un stylo !";
+            this.lblAl2.Text = "Veuillez enlever au moins un objet !";
             // 
             // pctExit
             // 
@@ -91,7 +91,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Elephant", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.ForeColor = System.Drawing.Color.Maroon;
             this.label1.Location = new System.Drawing.Point(282, 249);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(203, 27);

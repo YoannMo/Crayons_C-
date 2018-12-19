@@ -53,6 +53,8 @@
             this.lblTour = new System.Windows.Forms.Label();
             this.pctWin = new System.Windows.Forms.PictureBox();
             this.pctLose = new System.Windows.Forms.PictureBox();
+            this.pctInterr = new System.Windows.Forms.PictureBox();
+            this.lblOrdi = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pct5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pct13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pct10)).BeginInit();
@@ -73,6 +75,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pctExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctWin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctLose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctInterr)).BeginInit();
             this.SuspendLayout();
             // 
             // pct5
@@ -342,7 +345,7 @@
             this.lblAsk.BackColor = System.Drawing.Color.Transparent;
             this.lblAsk.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblAsk.Font = new System.Drawing.Font("Elephant", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAsk.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblAsk.ForeColor = System.Drawing.Color.Maroon;
             this.lblAsk.Location = new System.Drawing.Point(68, 142);
             this.lblAsk.Name = "lblAsk";
             this.lblAsk.Size = new System.Drawing.Size(275, 47);
@@ -371,8 +374,8 @@
             this.lblTour.BackColor = System.Drawing.Color.Transparent;
             this.lblTour.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblTour.Font = new System.Drawing.Font("Elephant", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTour.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblTour.Location = new System.Drawing.Point(73, 133);
+            this.lblTour.ForeColor = System.Drawing.Color.Maroon;
+            this.lblTour.Location = new System.Drawing.Point(68, 133);
             this.lblTour.Name = "lblTour";
             this.lblTour.Size = new System.Drawing.Size(260, 47);
             this.lblTour.TabIndex = 77;
@@ -383,7 +386,7 @@
             // 
             this.pctWin.BackColor = System.Drawing.Color.Transparent;
             this.pctWin.Image = ((System.Drawing.Image)(resources.GetObject("pctWin.Image")));
-            this.pctWin.Location = new System.Drawing.Point(125, 84);
+            this.pctWin.Location = new System.Drawing.Point(131, 93);
             this.pctWin.Name = "pctWin";
             this.pctWin.Size = new System.Drawing.Size(784, 521);
             this.pctWin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -394,12 +397,38 @@
             // 
             this.pctLose.BackColor = System.Drawing.Color.Transparent;
             this.pctLose.Image = ((System.Drawing.Image)(resources.GetObject("pctLose.Image")));
-            this.pctLose.Location = new System.Drawing.Point(219, 84);
+            this.pctLose.Location = new System.Drawing.Point(225, 93);
             this.pctLose.Name = "pctLose";
             this.pctLose.Size = new System.Drawing.Size(601, 521);
             this.pctLose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctLose.TabIndex = 79;
             this.pctLose.TabStop = false;
+            // 
+            // pctInterr
+            // 
+            this.pctInterr.BackColor = System.Drawing.Color.Transparent;
+            this.pctInterr.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pctInterr.Image = ((System.Drawing.Image)(resources.GetObject("pctInterr.Image")));
+            this.pctInterr.Location = new System.Drawing.Point(954, 12);
+            this.pctInterr.Name = "pctInterr";
+            this.pctInterr.Size = new System.Drawing.Size(80, 66);
+            this.pctInterr.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctInterr.TabIndex = 85;
+            this.pctInterr.TabStop = false;
+            this.pctInterr.Click += new System.EventHandler(this.pctInterr_Click);
+            // 
+            // lblOrdi
+            // 
+            this.lblOrdi.AutoSize = true;
+            this.lblOrdi.BackColor = System.Drawing.Color.Transparent;
+            this.lblOrdi.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblOrdi.Font = new System.Drawing.Font("Elephant", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOrdi.ForeColor = System.Drawing.Color.Maroon;
+            this.lblOrdi.Location = new System.Drawing.Point(663, 148);
+            this.lblOrdi.Name = "lblOrdi";
+            this.lblOrdi.Size = new System.Drawing.Size(0, 27);
+            this.lblOrdi.TabIndex = 86;
+            this.lblOrdi.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // frmJeu
             // 
@@ -409,6 +438,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1034, 689);
             this.ControlBox = false;
+            this.Controls.Add(this.lblOrdi);
+            this.Controls.Add(this.pctInterr);
             this.Controls.Add(this.pctLose);
             this.Controls.Add(this.pctWin);
             this.Controls.Add(this.lblTour);
@@ -457,6 +488,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pctExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctWin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctLose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctInterr)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -488,6 +520,8 @@
         private System.Windows.Forms.Label lblTour;
         private System.Windows.Forms.PictureBox pctWin;
         private System.Windows.Forms.PictureBox pctLose;
+        private System.Windows.Forms.PictureBox pctInterr;
+        private System.Windows.Forms.Label lblOrdi;
     }
 }
 

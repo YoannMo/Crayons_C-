@@ -54,6 +54,8 @@
             this.lblTour = new System.Windows.Forms.Label();
             this.cmdFin = new System.Windows.Forms.Button();
             this.lblVic = new System.Windows.Forms.Label();
+            this.pctInterr = new System.Windows.Forms.PictureBox();
+            this.lblJoueur = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pctExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pct15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pct2)).BeginInit();
@@ -70,6 +72,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pct10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pct13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pct5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctInterr)).BeginInit();
             this.SuspendLayout();
             // 
             // pctExit
@@ -103,7 +106,7 @@
             this.lblAsk.BackColor = System.Drawing.Color.Transparent;
             this.lblAsk.Font = new System.Drawing.Font("Elephant", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAsk.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblAsk.Location = new System.Drawing.Point(28, 158);
+            this.lblAsk.Location = new System.Drawing.Point(35, 158);
             this.lblAsk.Name = "lblAsk";
             this.lblAsk.Size = new System.Drawing.Size(341, 47);
             this.lblAsk.TabIndex = 84;
@@ -378,7 +381,7 @@
             this.lblTour.AutoSize = true;
             this.lblTour.BackColor = System.Drawing.Color.Transparent;
             this.lblTour.Font = new System.Drawing.Font("Elephant", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTour.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblTour.ForeColor = System.Drawing.Color.Maroon;
             this.lblTour.Location = new System.Drawing.Point(29, 158);
             this.lblTour.Name = "lblTour";
             this.lblTour.Size = new System.Drawing.Size(0, 47);
@@ -410,6 +413,32 @@
             this.lblVic.Size = new System.Drawing.Size(0, 62);
             this.lblVic.TabIndex = 94;
             // 
+            // pctInterr
+            // 
+            this.pctInterr.BackColor = System.Drawing.Color.Transparent;
+            this.pctInterr.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pctInterr.Image = ((System.Drawing.Image)(resources.GetObject("pctInterr.Image")));
+            this.pctInterr.Location = new System.Drawing.Point(953, 12);
+            this.pctInterr.Name = "pctInterr";
+            this.pctInterr.Size = new System.Drawing.Size(80, 66);
+            this.pctInterr.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctInterr.TabIndex = 95;
+            this.pctInterr.TabStop = false;
+            this.pctInterr.Click += new System.EventHandler(this.pctInterr_Click);
+            // 
+            // lblJoueur
+            // 
+            this.lblJoueur.AutoSize = true;
+            this.lblJoueur.BackColor = System.Drawing.Color.Transparent;
+            this.lblJoueur.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblJoueur.Font = new System.Drawing.Font("Elephant", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJoueur.ForeColor = System.Drawing.Color.Maroon;
+            this.lblJoueur.Location = new System.Drawing.Point(749, 133);
+            this.lblJoueur.Name = "lblJoueur";
+            this.lblJoueur.Size = new System.Drawing.Size(0, 27);
+            this.lblJoueur.TabIndex = 96;
+            this.lblJoueur.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // frmJeuMulti
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -418,6 +447,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1034, 689);
             this.ControlBox = false;
+            this.Controls.Add(this.lblJoueur);
+            this.Controls.Add(this.pctInterr);
             this.Controls.Add(this.lblVic);
             this.Controls.Add(this.cmdFin);
             this.Controls.Add(this.lblTour);
@@ -463,6 +494,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pct10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pct13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pct5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctInterr)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -495,5 +527,7 @@
         private System.Windows.Forms.Label lblTour;
         private System.Windows.Forms.Button cmdFin;
         private System.Windows.Forms.Label lblVic;
+        private System.Windows.Forms.PictureBox pctInterr;
+        private System.Windows.Forms.Label lblJoueur;
     }
 }

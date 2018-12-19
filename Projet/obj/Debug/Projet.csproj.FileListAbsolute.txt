@@ -34,3 +34,22 @@ C:\Users\yoann\OneDrive\Bureau\Projet\obj\Debug\Projet.exe.manifest
 C:\Users\yoann\OneDrive\Bureau\Projet\obj\Debug\Projet.application
 C:\Users\yoann\OneDrive\Bureau\Projet\obj\Debug\Projet.exe
 C:\Users\yoann\OneDrive\Bureau\Projet\obj\Debug\Projet.pdb
+C:\Users\yoann\OneDrive\Bureau\Projet Visual\Projet\bin\Debug\Projet.exe.config
+C:\Users\yoann\OneDrive\Bureau\Projet Visual\Projet\bin\Debug\Projet.exe.manifest
+C:\Users\yoann\OneDrive\Bureau\Projet Visual\Projet\bin\Debug\Projet.application
+C:\Users\yoann\OneDrive\Bureau\Projet Visual\Projet\bin\Debug\Projet.exe
+C:\Users\yoann\OneDrive\Bureau\Projet Visual\Projet\bin\Debug\Projet.pdb
+C:\Users\yoann\OneDrive\Bureau\Projet Visual\Projet\obj\Debug\Projet.csprojAssemblyReference.cache
+C:\Users\yoann\OneDrive\Bureau\Projet Visual\Projet\obj\Debug\Projet.frmAccueil.resources
+C:\Users\yoann\OneDrive\Bureau\Projet Visual\Projet\obj\Debug\Projet.frmAlerte.resources
+C:\Users\yoann\OneDrive\Bureau\Projet Visual\Projet\obj\Debug\Projet.frmJeu.resources
+C:\Users\yoann\OneDrive\Bureau\Projet Visual\Projet\obj\Debug\Projet.frmJeu2.resources
+C:\Users\yoann\OneDrive\Bureau\Projet Visual\Projet\obj\Debug\Projet.frmJeuMulti.resources
+C:\Users\yoann\OneDrive\Bureau\Projet Visual\Projet\obj\Debug\Projet.Properties.Resources.resources
+C:\Users\yoann\OneDrive\Bureau\Projet Visual\Projet\obj\Debug\Projet.csproj.GenerateResource.cache
+C:\Users\yoann\OneDrive\Bureau\Projet Visual\Projet\obj\Debug\Projet.csproj.CoreCompileInputs.cache
+C:\Users\yoann\OneDrive\Bureau\Projet Visual\Projet\obj\Debug\Projet.exe.manifest
+C:\Users\yoann\OneDrive\Bureau\Projet Visual\Projet\obj\Debug\Projet.application
+C:\Users\yoann\OneDrive\Bureau\Projet Visual\Projet\obj\Debug\Projet.exe
+C:\Users\yoann\OneDrive\Bureau\Projet Visual\Projet\obj\Debug\Projet.pdb
+C:\Users\yoann\OneDrive\Bureau\Projet Visual\Projet\obj\Debug\Projet.frmAide.resources

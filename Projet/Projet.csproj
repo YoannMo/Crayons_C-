@@ -74,6 +74,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAide.Designer.cs">
+      <DependentUpon>frmAide.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAccueil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAide.resx">
+      <DependentUpon>frmAide.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAccueil.resx">
       <DependentUpon>frmAccueil.cs</DependentUpon>
     </EmbeddedResource>

@@ -52,6 +52,8 @@
             this.cmdFin = new System.Windows.Forms.Button();
             this.pctLose = new System.Windows.Forms.PictureBox();
             this.pctWin = new System.Windows.Forms.PictureBox();
+            this.pctInterr = new System.Windows.Forms.PictureBox();
+            this.lblOrdi = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pctExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pct1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pct2)).BeginInit();
@@ -72,6 +74,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.cmdOui)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctLose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctWin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctInterr)).BeginInit();
             this.SuspendLayout();
             // 
             // pctExit
@@ -328,7 +331,7 @@
             this.lblAsk.BackColor = System.Drawing.Color.Transparent;
             this.lblAsk.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblAsk.Font = new System.Drawing.Font("Elephant", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAsk.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblAsk.ForeColor = System.Drawing.Color.Maroon;
             this.lblAsk.Location = new System.Drawing.Point(63, 127);
             this.lblAsk.Name = "lblAsk";
             this.lblAsk.Size = new System.Drawing.Size(275, 47);
@@ -342,7 +345,7 @@
             this.lblTour.BackColor = System.Drawing.Color.Transparent;
             this.lblTour.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblTour.Font = new System.Drawing.Font("Elephant", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTour.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblTour.ForeColor = System.Drawing.Color.Maroon;
             this.lblTour.Location = new System.Drawing.Point(52, 127);
             this.lblTour.Name = "lblTour";
             this.lblTour.Size = new System.Drawing.Size(260, 47);
@@ -387,6 +390,32 @@
             this.pctWin.TabIndex = 82;
             this.pctWin.TabStop = false;
             // 
+            // pctInterr
+            // 
+            this.pctInterr.BackColor = System.Drawing.Color.Transparent;
+            this.pctInterr.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pctInterr.Image = ((System.Drawing.Image)(resources.GetObject("pctInterr.Image")));
+            this.pctInterr.Location = new System.Drawing.Point(950, 12);
+            this.pctInterr.Name = "pctInterr";
+            this.pctInterr.Size = new System.Drawing.Size(80, 66);
+            this.pctInterr.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctInterr.TabIndex = 84;
+            this.pctInterr.TabStop = false;
+            this.pctInterr.Click += new System.EventHandler(this.pctInterr_Click);
+            // 
+            // lblOrdi
+            // 
+            this.lblOrdi.AutoSize = true;
+            this.lblOrdi.BackColor = System.Drawing.Color.Transparent;
+            this.lblOrdi.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblOrdi.Font = new System.Drawing.Font("Elephant", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOrdi.ForeColor = System.Drawing.Color.Maroon;
+            this.lblOrdi.Location = new System.Drawing.Point(718, 127);
+            this.lblOrdi.Name = "lblOrdi";
+            this.lblOrdi.Size = new System.Drawing.Size(0, 27);
+            this.lblOrdi.TabIndex = 85;
+            this.lblOrdi.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // frmJeu2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -396,6 +425,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1034, 689);
             this.ControlBox = false;
+            this.Controls.Add(this.lblOrdi);
+            this.Controls.Add(this.pctInterr);
             this.Controls.Add(this.pctLose);
             this.Controls.Add(this.pctWin);
             this.Controls.Add(this.cmdFin);
@@ -443,6 +474,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.cmdOui)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctLose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctWin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctInterr)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -472,5 +504,7 @@
         private System.Windows.Forms.Button cmdFin;
         private System.Windows.Forms.PictureBox pctLose;
         private System.Windows.Forms.PictureBox pctWin;
+        private System.Windows.Forms.PictureBox pctInterr;
+        private System.Windows.Forms.Label lblOrdi;
     }
 }

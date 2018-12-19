@@ -177,11 +177,11 @@
             this.lblTxt3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblTxt3.Font = new System.Drawing.Font("Elephant", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTxt3.ForeColor = System.Drawing.Color.Red;
-            this.lblTxt3.Location = new System.Drawing.Point(-2, 317);
+            this.lblTxt3.Location = new System.Drawing.Point(19, 312);
             this.lblTxt3.Name = "lblTxt3";
-            this.lblTxt3.Size = new System.Drawing.Size(746, 47);
+            this.lblTxt3.Size = new System.Drawing.Size(713, 47);
             this.lblTxt3.TabIndex = 49;
-            this.lblTxt3.Text = "Enlever le dernier crayon pour gagner ! ";
+            this.lblTxt3.Text = "Enlever le dernier objet pour gagner ! ";
             this.lblTxt3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pctGl
@@ -392,17 +392,19 @@
             // 
             // txtJ2
             // 
-            this.txtJ2.Location = new System.Drawing.Point(415, 285);
+            this.txtJ2.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtJ2.Location = new System.Drawing.Point(415, 268);
             this.txtJ2.Name = "txtJ2";
-            this.txtJ2.Size = new System.Drawing.Size(150, 20);
-            this.txtJ2.TabIndex = 67;
+            this.txtJ2.Size = new System.Drawing.Size(150, 49);
+            this.txtJ2.TabIndex = 2;
             // 
             // txtJ1
             // 
-            this.txtJ1.Location = new System.Drawing.Point(160, 285);
+            this.txtJ1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtJ1.Location = new System.Drawing.Point(151, 268);
             this.txtJ1.Name = "txtJ1";
-            this.txtJ1.Size = new System.Drawing.Size(150, 20);
-            this.txtJ1.TabIndex = 68;
+            this.txtJ1.Size = new System.Drawing.Size(150, 49);
+            this.txtJ1.TabIndex = 1;
             // 
             // cmdGo
             // 

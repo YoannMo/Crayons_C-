@@ -16,10 +16,14 @@ namespace Projet
         Random rnd = new Random();
         int nbrOrdi, nbAlea, nbrIm = 0;
         Boolean jo_or;
+        Boolean tour, msg=true;
+        int aide;
+    
 
         public frmJeu()
         {
             InitializeComponent();
+            aide = 1;
             cmdFin.Visible = false;
             pctWin.Visible = false;
             pctLose.Visible = false;
@@ -28,15 +32,18 @@ namespace Projet
 
         private void cmdOui_Click(object sender, EventArgs e)
         {
+            tour = true;
             cmdOui.Visible = false;
             cmdNon.Visible = false;
             lblAsk.Visible = false;
             cmdFin.Visible = true;
             lblTour.Visible = true;
+            aide = 2;
         }
 
         private void cmdNon_Click(object sender, EventArgs e)
         {
+            tour = true;
             cmdOui.Visible = false;
             cmdNon.Visible = false;
             lblAsk.Visible = false;
@@ -44,11 +51,12 @@ namespace Projet
             Tour_Ordi(nbAlea);
             nbrIm = nbrIm + nbAlea;
             cmdFin.Visible = true;
+            aide = 2;
         }
 
         private void picture_CLick(object sender, EventArgs e)
         {
-            if (cmdOui.Visible == false)
+            if (cmdOui.Visible == false & tour ==true)
             {
                 PictureBox pct_clique = sender as PictureBox;
                 if (pct_clique != null)
@@ -60,13 +68,14 @@ namespace Projet
                     Fin_de_jeu();
                     if (nbrCoups >= 3)
                     {
-                        lblTour.Visible = false;
-                        cmdFin.Visible = false;
-                        nbAlea = rnd.Next(1, 4);
-                        Tour_Ordi(nbAlea);
-                        nbrIm = nbrIm + nbAlea;
-                        jo_or = false;
-                        Fin_de_jeu();
+                        tour = false;
+                        aide = 3;
+                        if (msg)
+                        {
+                            frmAlerte fenetreAlerte = new frmAlerte(false);
+                            fenetreAlerte.ShowDialog();
+                            msg = !msg;
+                        }
                     }
                 }
             }
@@ -76,7 +85,7 @@ namespace Projet
 
             if (nbrCoups == 0)
             {
-                frmAlerte fenetreAlerte = new frmAlerte();
+                frmAlerte fenetreAlerte = new frmAlerte(true);
                 fenetreAlerte.ShowDialog();
             }
             else
@@ -88,7 +97,8 @@ namespace Projet
                 nbrIm = nbrIm + nbAlea;
                 jo_or = false;
                 Fin_de_jeu();
-                
+                tour = true;
+                aide = 2;
             }
         }        
 
@@ -218,6 +228,13 @@ namespace Projet
             nbrCoups = 0;
             cmdFin.Visible = true;
             lblTour.Visible = true;
+            lblOrdi.Text = "L'ordinateur a enlevé " + a + " crayons.";
+        }
+
+        private void pctInterr_Click(object sender, EventArgs e)
+        {
+            frmAide fenetreAcc = new frmAide(aide);
+            fenetreAcc.ShowDialog();
         }
 
         private void Fin_de_jeu()
@@ -236,6 +253,8 @@ namespace Projet
                 }
                 cmdFin.Visible = false;
                 lblTour.Visible = false;
+                pctInterr.Visible = false;
+                lblOrdi.Visible = false;
             }
         }
 
